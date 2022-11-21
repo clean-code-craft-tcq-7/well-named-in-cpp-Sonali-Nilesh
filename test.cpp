@@ -6,8 +6,8 @@ namespace TelCoColorCoder
 {
 
 void testNumberToPair(int pairNumber,
-    TelCoColorCoder::MajorColor expectedMajor,
-    TelCoColorCoder::MinorColor expectedMinor)
+    ColorPair::MajorColor expectedMajor,
+    ColorPair::MinorColor expectedMinor)
 {
     ColorPair::colorPair =
         TelCoColorCoder::GetColorFromPairNumber(pairNumber);
@@ -17,8 +17,8 @@ void testNumberToPair(int pairNumber,
 }
 
 void testPairToNumber(
-    TelCoColorCoder::MajorColor major,
-    TelCoColorCoder::MinorColor minor,
+    ColorPair::MajorColor major,
+    ColorPair::MinorColor minor,
     int expectedPairNumber)
 {
     int pairNumber = TelCoColorCoder::GetPairNumberFromColor(major, minor);
