@@ -1,7 +1,5 @@
 
 
-
-
 class ColorPair {
         private:
             MajorColor majorColor;
