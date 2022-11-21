@@ -1,6 +1,9 @@
 #include <iostream>
 #include <assert.h>
+#include "ColorPair.cpp"
 
+namespace TelCoColorCoder
+{
 
 void testNumberToPair(int pairNumber,
     TelCoColorCoder::MajorColor expectedMajor,
@@ -21,4 +24,6 @@ void testPairToNumber(
     int pairNumber = TelCoColorCoder::GetPairNumberFromColor(major, minor);
     std::cout << "Got pair number " << pairNumber << std::endl;
     assert(pairNumber == expectedPairNumber);
+}
+
 }
