@@ -28,4 +28,12 @@ enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
     {
         return major * numberOfMinorColors + minor + 1;
     }
+ 
+    printManual(int pairNumber)
+    {
+        for (pairNumber=1; pairNumber<26; pairNumber++)
+        {     
+        std::cout << "Pair Number" << pairNumber << " " << colorPair.ToString() << std::endl;
+        }
+    }
 }
