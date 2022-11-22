@@ -1,13 +1,13 @@
 #include "ColorPair.hpp"
-#include <iostream>
-#include <assert.h>
-
-namespace TelCoColorCoder
-{
-
-    const char* MajorColorNames[] = {"White", "Red", "Black", "Yellow", "Violet"};
+    
+    namespace TelCoColorCoder
+    {
+        const char* MajorColorNames[] = {"White", "Red", "Black", "Yellow", "Violet"};
+        const char* MinorColorNames[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
     int numberOfMajorColors = sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
-    const char* MinorColorNames[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
+    
+   
+    
     int numberOfMinorColors = sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
     
     ColorPair GetColorFromPairNumber(int pairNumber) 
@@ -22,26 +22,21 @@ namespace TelCoColorCoder
     {
         return major * numberOfMinorColors + minor + 1;
     }
-    
-    MajorColor getMajor() {
-        return majorColor;
-    }
- 
-    MinorColor getMinor() {
-        return minorColor;
-    }
-    
-   std::string ToString() {
+
+    std::string ColorPair::ToString() {
                 std::string colorPairStr = MajorColorNames[majorColor];
                 colorPairStr += " ";
                 colorPairStr += MinorColorNames[minorColor];
                 return colorPairStr;
-       
-    printManual(int pairNumber)
+            }
+ 
+    void printManual(void)
     {
-        for (pairNumber=1; pairNumber<26; pairNumber++)
-        {     
-        std::cout << "Pair Number" << pairNumber << " " << colorPair.ToString() << std::endl;
+        for (int pairNumber=1; pairNumber<26; pairNumber++)
+        {
+            
+            TelCoColorCoder::ColorPair colorPair = TelCoColorCoder::GetColorFromPairNumber(pairNumber);     
+            std::cout << "Pair Number" << pairNumber<< " " << colorPair.ToString() << std::endl;
         }
     }
-}
+    }
