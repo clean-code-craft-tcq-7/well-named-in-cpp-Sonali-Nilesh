@@ -25,6 +25,7 @@ namespace TelCoColorCoder
     
     MajorColor getMajor() {
         return majorColor;
+    }
  
     MinorColor getMinor() {
         return minorColor;
