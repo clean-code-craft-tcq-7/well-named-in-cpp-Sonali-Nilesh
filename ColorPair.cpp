@@ -1,7 +1,6 @@
 #include "ColorPair.hpp"
 #include <iostream>
 #include <assert.h>
-#include "main.cpp"
 
 namespace TelCoColorCoder
 {
