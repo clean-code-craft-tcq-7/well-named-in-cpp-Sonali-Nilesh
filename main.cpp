@@ -1,12 +1,11 @@
-#include <iostream>
-#include <assert.h>
 #include "ColorPair.cpp"
-#include "test.cpp"
-#include "ColorPair.hpp"
+#include "test.hpp"
 
-namespace TelCoColorCoder
-{
+
+using namespace TelCoColorCoder;
 int main() {
+    printManual();
+    
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
     testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
 
@@ -14,5 +13,4 @@ int main() {
     testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
 
     return 0;
-}
 }
