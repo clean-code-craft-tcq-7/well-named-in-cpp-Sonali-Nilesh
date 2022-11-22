@@ -31,6 +31,7 @@ void testNumberToPair(int, TelCoColorCoder::MajorColor, TelCoColorCoder::MinorCo
 void testPairToNumber(TelCoColorCoder::MajorColor, TelCoColorCoder::MinorColor, int);
 ColorPair GetColorFromPairNumber(int pairNumber);
 int GetPairNumberFromColor(MajorColor major, MinorColor minor);
+void printManual(int pairNumber);
   
 }
 #endif
