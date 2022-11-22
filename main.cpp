@@ -1,4 +1,4 @@
-#include "ColorPair.cpp"
+#include "ColorPair.hpp"
 #include "test.hpp"
 
 
